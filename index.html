@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pomodoro Timer</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Pomodoro Timer</h1>
+  </header>
+
+  <main>
+    <section id="timer">
+      <h2>Timer</h2>
+      <div id="time-display">25:00</div>
+      <!-- Timer controls: Start, Pause, Reset -->
+      <button id="start-btn">Start</button>
+      <button id="pause-btn">Pause</button>
+      <button id="reset-btn">Reset</button>
+    </section>
+
+    <section id="settings">
+      <h2>Settings</h2>
+      <!-- User can customize work and break durations -->
+      <form>
+        <label for="work-duration">Work Duration (minutes):</label>
+        <input type="number" id="work-duration" name="work-duration" value="25" />
+
+        <label for="break-duration">Break Duration (minutes):</label>
+        <input type="number" id="break-duration" name="break-duration" value="5" />
+      </form>
+    </section>
+
+    <section id="progress">
+      <h2>Progress Tracker</h2>
+      <ul id="session-log">
+        <!--Progress log will show completed Pomodoro sessions-->
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Gayatri Deshpande </p>
+  </footer>
+</body>
+</html>
