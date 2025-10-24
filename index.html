@@ -5,8 +5,6 @@
   <link rel="stylesheet" href="style.css">
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Pomodoro Timer</title>
-  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header>
@@ -25,20 +23,30 @@
 
     <section id="settings">
       <h2>Settings</h2>
-      <!-- User can customize work and break durations -->
       <form>
         <label for="work-duration">Work Duration (minutes):</label>
         <input type="number" id="work-duration" name="work-duration" value="25" />
 
         <label for="break-duration">Break Duration (minutes):</label>
         <input type="number" id="break-duration" name="break-duration" value="5" />
-      </form>
-    </section>
+
+    <label for="sound-select">Choose Alert Sound:</label>
+    <select id="sound-select">
+      <option value="bell">Bell</option>
+      <option value="chime">Chime</option>
+      <option value="alarm">Alarm</option>
+    </select>
+     </form>
+</section>
+
+<audio id="bell" src="sounds/bell.mp3" type="audio/mpeg"></audio>
+<audio id="chime" src="sounds/chime.mp3" type="audio/mpeg"></audio>
+<audio id="alarm" src="sounds/alarm.mp3" type="audio/mpeg"></audio>
+
 
     <section id="progress">
       <h2>Progress Tracker</h2>
       <ul id="session-log">
-        <!--Progress log will show completed Pomodoro sessions-->
       </ul>
     </section>
   </main>
@@ -47,6 +55,5 @@
     <p>&copy; 2025 Gayatri Deshpande </p>
   </footer>
 </body>
-<!-- Link to JavaScript -->
   <script src="script.js"></script>
 </html>
