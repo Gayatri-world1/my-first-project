@@ -9,6 +9,7 @@
 <body>
   <header>
     <h1>Pomodoro Timer</h1>
+    <button id="themeToggle" class="btn">Toggle Theme</button>
   </header>
 
   <main>
@@ -20,6 +21,13 @@
       <button id="pause-btn">Pause</button>
       <button id="reset-btn">Reset</button>
     </section>
+
+  <div id="progress-tracker">
+  <h3>Progress Tracker</h3>
+  <p>Pomodoro Sessions Completed: <span id="sessionCount">0</span></p>
+  <p>Breaks Taken: <span id="breakCount">0</span></p>
+  <button id="resetProgress">Reset Progress</button>
+  </div>
 
     <section id="settings">
       <h2>Settings</h2>
