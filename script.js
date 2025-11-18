@@ -16,6 +16,8 @@ function startTimer() {
 
   timerInterval = setInterval(() => {
     timeLeft--;
+    console.log("Time left:", timeLeft);
+    console.log("Is work interval:", isWorkInterval);
     updateDisplay();
 
     if (timeLeft <= 0) {
@@ -109,5 +111,5 @@ document.getElementById('resetProgress').addEventListener('click', () => {
 
 const toggleBtn = document.getElementById('themeToggle');
 toggleBtn.addEventListener('click', () => {
-  document.body.classList.toggle('dark-theme');
+  document.documentElement.classList.toggle('dark-theme');
 });
